@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevQuote generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body
+    class="h-screen bg-[url('./img/bgimage.jpg')] bg-cover bg-center no-repeat p-2 font-sans"
+  >
+    <section class="mb-[30px] flex justify-between">
+      <div class="flex gap-4">
+        <img
+          src="img/logo.jpg"
+          alt="logo"
+          class="inline w-[50px] h-[50px] rounded-full object-cover"
+        />
+        <div class="flex inline flex-col">
+          <h1 class="flex-col text-3xl text-white font-bold">DevQuote</h1>
+          <p class="text-white font-bold">
+            Fuel your mind . Build your future.
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex gap-4 mr-[50px] border border-blue-200 w-20 h-10 bg-black rounded-full p-3 items-center justify-between relative"
+      >
+        <i class="fa-solid fa-sun text-white text-lg ml-1"></i>
+        <i class="fa-solid fa-moon text-white text-lg ml-1"></i>
+      </div>
+    </section>
+
+    <section class="flex flex-col items-center justify-center">
+      <div class="flex flex-col text-white gap-2 text-center">
+        <h1 class="text-5xl">Random Quotes For</h1>
+        <h1
+          class="text-5xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent"
+        >
+          Better Developers
+        </h1>
+        <p class="text-lg">Get inspired. Stay consistence. Keep building.</p>
+      </div>
+      <div
+        class="bg-slate-900 border border-blue-200 mt-10 rounded-2xl h-[300px] w-[600px] p-8"
+      >
+        <div class="flex justify-between">
+          <i
+            class="fa-solid fa-quote-left text-5xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent"
+          ></i>
+          <p id="number" class="text-black p-2 rounded-xl bg-slate-400">#12</p>
+        </div>
+        <div class="text-white text-3xl text-center">
+          <p id="quote">
+            "First, solve the problem. <br />
+            Then write the code."
+          </p>
+          <span id="author" class="text-xl"> - John Johnson</span>
+        </div>
+        <div class="text-white flex gap-8 justify-center mt-6">
+          <button
+            id="generatebtn"
+            class="p-3 rounded-lg bg-gradient-to-r from-blue-500 to-purple-500"
+          >
+            <i class="fa-solid fa-shuffle mr-3"></i>New Quote
+          </button>
+          <button
+            id="Copy"
+            class="p-3 rounded-lg border border-red-50 bg-transparent"
+          >
+            <i class="fa-regular fa-copy mr-4"></i>Copy
+          </button>
+        </div>
+      </div>
+      <div class="flex justify-center items-center gap-3 mt-10">
+        <div
+          class="w-4 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"
+        ></div>
+        <div class="w-2 h-2 bg-slate-400 rounded-full"></div>
+        <div class="w-2 h-2 bg-slate-400 rounded-full"></div>
+        <div class="w-2 h-2 bg-slate-400 rounded-full"></div>
+        <div class="w-2 h-2 bg-slate-400 rounded-full"></div>
+      </div>
+    </section>
+    <footer class="text-white text-center mt-8">
+      Small steps of code lead to big dreams.
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
