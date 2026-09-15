@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>crypto-price-tracker</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body class="bg-blue-950">
+    <section
+      class="flex items-center justify-between border-b border-red-100 p-2"
+    >
+      <div class="flex items-center gap-2">
+        <img src="imge/logo.jpg" alt="" class="h-10 w-10 ml-2.5 mt-2" />
+        <h1 class="text-white">
+          Crypto<span class="text-sky-400">Tracker</span>
+        </h1>
+      </div>
+      <div>
+        <nav class="flex gap-9">
+          <a href="#" class="text-sky-400">Home</a>
+          <a href="#" class="text-white">Coins</a>
+          <a href="#" class="text-white">About</a>
+        </nav>
+      </div>
+      <div class="flex items-center gap-6 mr-4">
+        <i
+          class="fa-solid fa-moon text-white border border-amber-50 px-4 py-3 rounded-3xl bg-slate-700"
+        ></i>
+        <div
+          class="flex items-center gap-2 border border-amber-50 p-2 rounded-3xl bg-slate-700"
+        >
+          <div class="h-2 w-2 rounded-full bg-green-500"></div>
+          <p class="text-white">
+            Live Prices <i class="fa-solid fa-chevron-down"></i>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex flex-col items-center justify-center mt-4 gap-4">
+      <div
+        class="flex items-center justify-center w-3xs gap-2 border border-amber-50 p-2 rounded-3xl bg-slate-700"
+      >
+        <div class="h-2 w-2 rounded-full bg-green-500"></div>
+        <p class="text-white">Live Data from CoinGecko</p>
+      </div>
+      <div
+        class="flex text-white text-4xl flex-col justify-center text-center gap-2"
+      >
+        <h1>Track Real-Time</h1>
+        <h1><span class="text-sky-400">CryptoCurrencies</span> Prices</h1>
+        <p class="text-base text-red-100">
+          Get live prices, market data and trends for top CryptoCurrencies
+          <br />
+          all in one place.
+        </p>
+      </div>
+      <div class="flex gap-7 items-center">
+        <i class="fa-solid fa-magnifying-glass absolute text-red-100"></i>
+        <input
+          type="search"
+          name="search"
+          id=""
+          class="text-white relative border border-amber-100 rounded-xl w-lg p-2 placeholder:pl-8 bottom-0 right-3"
+          placeholder=" Search Coins (e.g. Bitcoin, Ethereum, Solana ...)"
+        />
+        <select
+          name="select"
+          id=""
+          class="text-white border border-amber-100 rounded-xl p-2"
+        >
+          <option value="" class="text-black">All</option>
+          <option value="" class="text-black">top 10</option>
+          <option value="" class="text-black">Top 50</option>
+          <option value="" class="text-black">Top 100</option>
+          <option value="" class="text-black">Favourites</option>
+        </select>
+      </div>
+    </section>
+    <section>
+      <div class="flex justify-center gap-4 mt-4">
+        <div
+          class="flex items-center justify-center gap-2 border border-amber-50 px-4 rounded-3xl bg-yellow-900"
+        >
+          <p class="text-white">All</p>
+        </div>
+        <div
+          class="flex items-center justify-center gap-2 border border-amber-50 px-4 rounded-3xl bg-slate-700"
+        >
+          <p class="text-white">Top 10</p>
+        </div>
+
+        <div
+          class="flex items-center justify-center gap-2 border border-amber-50 px-4 rounded-3xl bg-slate-700"
+        >
+          <p class="text-white">Top 20</p>
+        </div>
+        <div
+          class="flex items-center justify-center gap-2 border border-amber-50 px-4 rounded-3xl bg-slate-700"
+        >
+          <p class="text-white">Top 50</p>
+        </div>
+        <div
+          class="flex items-center justify-center gap-2 border border-amber-50 px-4 rounded-3xl bg-slate-700"
+        >
+          <p class="text-white">Top 100</p>
+        </div>
+        <div
+          class="flex items-center justify-center gap-2 border border-amber-50 px-4 py-2 rounded-3xl bg-slate-700"
+        >
+          <p class="text-white">Favourites</p>
+        </div>
+      </div>
+      <div class="flex justify-center mt-8">
+        <div class="container grid grid-cols-2 md:grid-cols-4 gap-10 mx-auto">
+          <div class="bg-slate-700 h-60 w-60 p-2 rounded-2xl">
+            <div class="flex items-center justify-between p-2">
+              <p class="bg-slate-600 px-2 py-1 rounded-2xl text-white">#1</p>
+              <div class="flex">
+                <!-- <img src="imge/icons8-bitcoin-48.png" alt="" /> -->
+
+                <div class="text-white">
+                  <h1>Bitcoin</h1>
+                  <p>BTC</p>
+                </div>
+              </div>
+              <div><i class="fa-regular fa-heart text-white"></i></div>
+            </div>
+
+            <h1 class="text-white">$117,432.56</h1>
+            <div class="flex items-center">
+              <i class="fa-solid fa-sort-up text-green-400 mx-2 mt-3"></i>
+              <p class="text-green-400">+2.34% (24hr)</p>
+            </div>
+            <div class="mt-3 text-white">
+              <div class="flex gap-11 mx-2">
+                <p><i class="fa-solid fa-graduation-cap mr-2"></i>Market Cap</p>
+                <p>$2.32T</p>
+              </div>
+              <div class="flex gap-11 mx-2">
+                <p><i class="fa-solid fa-chart-simple mr-2"></i>24hr Volume</p>
+                <p>$28.4B</p>
+              </div>
+              <div class="flex gap-7 mx-2">
+                <p><i class="fa-regular fa-clock mr-2"></i>Last Updated</p>
+                <p>Just now</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-slate-700 h-60 w-60 p-2 rounded-2xl">
+            <div class="flex items-center justify-between p-2">
+              <p class="bg-slate-600 px-2 py-1 rounded-2xl text-white">#1</p>
+              <div class="flex">
+                <img src="imge/icons8-ethereum-50.png" alt="" />
+
+                <div class="text-white">
+                  <h1>Ethereum</h1>
+                  <p>ETH</p>
+                </div>
+              </div>
+              <div><i class="fa-regular fa-heart text-white"></i></div>
+            </div>
+
+            <h1 class="text-white">$4521.32</h1>
+            <div class="flex items-center">
+              <i class="fa-solid fa-sort-up text-green-400 mx-2 mt-3"></i>
+              <p class="text-green-400">+1.12% (24hr)</p>
+            </div>
+            <div class="mt-3 text-white">
+              <div class="flex gap-10 mx-2">
+                <p><i class="fa-solid fa-graduation-cap mr-2"></i>Market Cap</p>
+                <p>$543.2B</p>
+              </div>
+              <div class="flex gap-11 mx-2">
+                <p><i class="fa-solid fa-chart-simple mr-2"></i>24hr Volume</p>
+                <p>$18.7B</p>
+              </div>
+              <div class="flex gap-7 mx-2">
+                <p><i class="fa-regular fa-clock mr-2"></i>Last Updated</p>
+                <p>Just now</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-slate-700 h-60 w-60 p-2 rounded-2xl">
+            <div class="flex items-center justify-between p-2">
+              <p class="bg-slate-600 px-2 py-1 rounded-2xl text-white">#1</p>
+              <div class="flex">
+                <img src="imge/icons8-tether-48.png" alt="" />
+
+                <div class="text-white">
+                  <h1>Tetherr</h1>
+                  <p>USDT</p>
+                </div>
+              </div>
+              <div><i class="fa-regular fa-heart text-white"></i></div>
+            </div>
+
+            <h1 class="text-white">$1.00</h1>
+            <div class="flex items-center">
+              <i class="fa-solid fa-sort-up text-green-400 mx-2 mt-3"></i>
+              <p class="text-green-400">+0.01% (24hr)</p>
+            </div>
+            <div class="mt-3 text-white">
+              <div class="flex gap-10 mx-2">
+                <p><i class="fa-solid fa-graduation-cap mr-2"></i>Market Cap</p>
+                <p>$118.6B</p>
+              </div>
+              <div class="flex gap-11 mx-2">
+                <p><i class="fa-solid fa-chart-simple mr-2"></i>24hr Volume</p>
+                <p>$62.3B</p>
+              </div>
+              <div class="flex gap-7 mx-2">
+                <p><i class="fa-regular fa-clock mr-2"></i>Last Updated</p>
+                <p>Just now</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-slate-700 h-60 w-60 p-2 rounded-2xl">
+            <div class="flex items-center justify-between p-2">
+              <p class="bg-slate-600 px-2 py-1 rounded-2xl text-white">#1</p>
+              <div class="flex">
+                <img src="imge/icons8-bnb-50.png" alt="" />
+
+                <div class="text-white">
+                  <h1>BNB</h1>
+                  <p>BNB</p>
+                </div>
+              </div>
+              <div><i class="fa-regular fa-heart text-white"></i></div>
+            </div>
+
+            <h1 class="text-white">$845.21</h1>
+            <div class="flex items-center">
+              <i class="fa-solid fa-sort-down text-red-400 mx-2 mb-1"></i>
+              <p class="text-red-400">-0.56% (24hr)</p>
+            </div>
+            <div class="mt-3 text-white">
+              <div class="flex gap-10 mx-2">
+                <p><i class="fa-solid fa-graduation-cap mr-2"></i>Market Cap</p>
+                <p>$123.4b</p>
+              </div>
+              <div class="flex gap-11 mx-2">
+                <p><i class="fa-solid fa-chart-simple mr-2"></i>24hr Volume</p>
+                <p>$2.8B</p>
+              </div>
+              <div class="flex gap-7 mx-2">
+                <p><i class="fa-regular fa-clock mr-2"></i>Last Updated</p>
+                <p>Just now</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-slate-700 h-60 w-60 p-2 rounded-2xl">
+            <div class="flex items-center justify-between p-2">
+              <p class="bg-slate-600 px-2 py-1 rounded-2xl text-white">#1</p>
+              <div class="flex">
+                <img src="imge/icons8-solana-50.png" alt="" />
+
+                <div class="text-white">
+                  <h1>Solana</h1>
+                  <p>SOL</p>
+                </div>
+              </div>
+              <div><i class="fa-regular fa-heart text-white"></i></div>
+            </div>
+
+            <h1 class="text-white">$198.76</h1>
+            <div class="flex items-center">
+              <i class="fa-solid fa-sort-up text-green-400 mx-2 mt-3"></i>
+              <p class="text-green-400">+3.21% (24hr)</p>
+            </div>
+            <div class="mt-3 text-white">
+              <div class="flex gap-11 mx-2">
+                <p><i class="fa-solid fa-graduation-cap mr-2"></i>Market Cap</p>
+                <p>$92.1B</p>
+              </div>
+              <div class="flex gap-11 mx-2">
+                <p><i class="fa-solid fa-chart-simple mr-2"></i>24hr Volume</p>
+                <p>$4.92B</p>
+              </div>
+              <div class="flex gap-7 mx-2">
+                <p><i class="fa-regular fa-clock mr-2"></i>Last Updated</p>
+                <p>Just now</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-slate-700 h-60 w-60 p-2 rounded-2xl">
+            <div class="flex items-center justify-between p-2">
+              <p class="bg-slate-600 px-2 py-1 rounded-2xl text-white">#1</p>
+              <div class="flex">
+                <img src="imge/icons8-xrp-50.png" alt="" />
+
+                <div class="text-white">
+                  <h1>XRP</h1>
+                  <p>XRP</p>
+                </div>
+              </div>
+              <div><i class="fa-regular fa-heart text-white"></i></div>
+            </div>
+
+            <h1 class="text-white">$2.93</h1>
+            <div class="flex items-center">
+              <i class="fa-solid fa-sort-up text-green-400 mx-2 mt-3"></i>
+              <p class="text-green-400">+1.45% (24hr)</p>
+            </div>
+            <div class="mt-3 text-white">
+              <div class="flex gap-11 mx-2">
+                <p><i class="fa-solid fa-graduation-cap mr-2"></i>Market Cap</p>
+                <p>$169.7B</p>
+              </div>
+              <div class="flex gap-11 mx-2">
+                <p><i class="fa-solid fa-chart-simple mr-2"></i>24hr Volume</p>
+                <p>$3.4B</p>
+              </div>
+              <div class="flex gap-7 mx-2">
+                <p><i class="fa-regular fa-clock mr-2"></i>Last Updated</p>
+                <p>Just now</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-slate-700 h-60 w-60 p-2 rounded-2xl">
+            <div class="flex items-center justify-between p-2">
+              <p class="bg-slate-600 px-2 py-1 rounded-2xl text-white">#1</p>
+              <div class="flex">
+                <img src="imge/icons8-usdc-50.png" alt="" />
+
+                <div class="text-white">
+                  <h1>USDC</h1>
+                  <p>USDC</p>
+                </div>
+              </div>
+              <div><i class="fa-regular fa-heart text-white"></i></div>
+            </div>
+
+            <h1 class="text-white">$1.00</h1>
+            <div class="flex items-center">
+              <i class="fa-solid fa-sort-up text-green-400 mx-2 mt-3"></i>
+              <p class="text-green-400">+0.00% (24hr)</p>
+            </div>
+            <div class="mt-3 text-white">
+              <div class="flex gap-11 mx-2">
+                <p><i class="fa-solid fa-graduation-cap mr-2"></i>Market Cap</p>
+                <p>$35.8B</p>
+              </div>
+              <div class="flex gap-11 mx-2">
+                <p><i class="fa-solid fa-chart-simple mr-2"></i>24hr Volume</p>
+                <p>$7.1B</p>
+              </div>
+              <div class="flex gap-7 mx-2">
+                <p><i class="fa-regular fa-clock mr-2"></i>Last Updated</p>
+                <p>Just now</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-slate-700 h-60 w-60 p-2 rounded-2xl">
+            <div class="flex items-center justify-between p-2">
+              <p class="bg-slate-600 px-2 py-1 rounded-2xl text-white">#1</p>
+              <div class="flex">
+                <img src="imge/icons8-dogecoin-50.png" alt="" />
+
+                <div class="text-white">
+                  <h1>Dogecoin</h1>
+                  <p>DOGE</p>
+                </div>
+              </div>
+              <div><i class="fa-regular fa-heart text-white"></i></div>
+            </div>
+
+            <h1 class="text-white">$0.2314</h1>
+            <div class="flex items-center">
+              <i class="fa-solid fa-sort-down text-red-400 mx-2 mb-1"></i>
+              <p class="text-red-400">-1.23% (24hr)</p>
+            </div>
+            <div class="mt-3 text-white">
+              <div class="flex gap-11 mx-2">
+                <p><i class="fa-solid fa-graduation-cap mr-2"></i>Market Cap</p>
+                <p>$33.4B</p>
+              </div>
+              <div class="flex gap-11 mx-2">
+                <p><i class="fa-solid fa-chart-simple mr-2"></i>24hr Volume</p>
+                <p>$2.1B</p>
+              </div>
+              <div class="flex gap-7 mx-2">
+                <p><i class="fa-regular fa-clock mr-2"></i>Last Updated</p>
+                <p>Just now</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex text-white items-center gap-4 mb-6 mt-4 justify-center">
+        <button class="bg-blue-500 rounded-2xl p-3">
+          <i class="fa-solid fa-rotate text-white mr-2"></i>Refresh Prices
+        </button>
+        <p>Last Updated : Just now</p>
+      </div>
+    </section>
+    <section
+      class="flex items-center justify-between border-t border-red-100 p-2"
+    >
+      <div class="flex flex-col">
+        <div class="flex items-center gap-2">
+          <img src="imge/logo.jpg" alt="" class="h-10 w-10 ml-2.5 mt-2" />
+          <h1 class="text-white">
+            Crypto<span class="text-sky-400">Tracker</span>
+          </h1>
+        </div>
+        <p class="text-white ml-4">Track Smarter. Invest Better.</p>
+      </div>
+      <div>
+        <nav class="flex gap-9">
+          <a href="#" class="text-sky-400">Home</a>
+          <a href="#" class="text-white">About</a>
+          <a href="#" class="text-white">API</a>
+          <a href="#" class="text-white">Contact</a>
+        </nav>
+      </div>
+      <div class="text-white mr-4 flex gap-4">
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+    </section>
+    <footer >
+      <p class="text-white text-center mb-4">
+        <i class="fa-regular fa-copyright"></i>2025 CryptoTracker. Data from
+        CoinGecko. Built with sameer.
+      </p>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
