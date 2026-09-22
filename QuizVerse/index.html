@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>quizverse</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-[url(/img/bg.jpg)] h-screen bg-center w-screen bg-cover bg-no-repeat md:flex md:items-center md:justify-center flex-col"
+  >
+    <header class="md:hidden">
+      <div class="flex items-center justify-between p-2">
+        <div class="flex items-center text-white">
+          <img
+            src="img/logo.jpg"
+            alt="logo"
+            class="h-12 w-12 object-cover rounded-full"
+          />
+          <div class="flex items-center flex-col">
+            <h1 class="text-3xl">
+              Quiz<span class="text-violet-400">Verse</span>
+            </h1>
+            <div class="flex items-center text-lg">
+              <p>
+                Learn
+                <span class="inline-block h-2 w-2 rounded-full bg-white"></span>
+                Play
+                <span class="inline-block h-2 w-2 rounded-full bg-white"></span>
+                Grow
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-slate-800 mr-6 p-2 rounded-full md:hidden">
+          <i class="ri-sun-line inline-block text-white text-4xl"></i>
+        </div>
+      </div>
+    </header>
+    <main
+      class="hidden md:flex flex-col bg-transparent border border-violet-950 text-white rounded-2xl"
+    >
+      <header>
+        <div class="flex items-center justify-between p-2 gap-70">
+          <div class="flex items-center text-white">
+            <img
+              src="img/logo.jpg"
+              alt="logo"
+              class="h-12 w-12 object-cover rounded-full"
+            />
+            <div class="flex items-center flex-col">
+              <h1 class="text-3xl">
+                Quiz<span class="text-violet-400">Verse</span>
+              </h1>
+              <div class="flex items-center text-lg">
+                <p>
+                  Learn
+                  <span
+                    class="inline-block h-2 w-2 rounded-full bg-white"
+                  ></span>
+                  Play
+                  <span
+                    class="inline-block h-2 w-2 rounded-full bg-white"
+                  ></span>
+                  Grow
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center gap-y-2">
+            <p>
+              Small Questions<br />
+              Big progress
+            </p>
+            <span
+              class="bg-violet-700 h-1 w-10 rounded-full inline-block"
+            ></span>
+          </div>
+        </div>
+      </header>
+      <section class="text-white">
+        <div class="bg-slate-800 m-4 p-2 rounded-2xl border border-violet-800">
+          <div class="flex items-center justify-between">
+            <h1 class="text-violet-600">Question 1 of 10</h1>
+            <p>Score: <span class="text-green-600">2</span></p>
+          </div>
+          <div class="flex items-center mt-2">
+            <div class="bg-slate-600 w-xl h-4 rounded-full">
+              <div class="bg-violet-600 h-full w-[30%] rounded-full"></div>
+            </div>
+            <p class="ml-4">30%</p>
+          </div>
+          <div
+            class="bg-slate-800 m-4 p-2 mb-4 rounded-2xl border border-violet-800"
+          >
+            <div class="flex items-center justify-center flex-col">
+              <h1 class="text-center text-3xl">
+                Which of the following is used to style <br />
+                web pages.
+              </h1>
+              <div
+                id="options"
+                class="flex flex-col gap-y-2 items-center justify-center mt-4"
+              >
+                <button
+                  class="option flex items-center text-xl border py-1.5 w-lg pl-4 rounded-xl"
+                >
+                  <p class="mr-4 bg-violet-700 h-8 w-8 rounded-full">A</p>
+                  CSS
+                </button>
+                <button
+                  class="option flex items-center text-xl border py-1.5 w-lg pl-4 rounded-xl"
+                >
+                  <p class="mr-4 bg-violet-700 h-8 w-8 rounded-full">B</p>
+                  HTML
+                </button>
+                <button
+                  class="option flex items-center text-xl border py-1.5 w-lg pl-4 rounded-xl"
+                >
+                  <p class="mr-4 bg-violet-700 h-8 w-8 rounded-full">C</p>
+                  JavaScript
+                </button>
+                <button
+                  class="option flex items-center text-xl border py-1.5 w-lg pl-4 rounded-xl"
+                >
+                  <p class="mr-4 bg-violet-700 h-8 w-8 rounded-full">D</p>
+                  Python
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex gap-6 mt-4 mb-3 bg-transparent items-center justify-between mx-20"
+          >
+            <button class="bg-transparent border py-2 px-4 rounded-xl">
+              <i class="ri-reset-left-fill"></i> Previous
+            </button>
+            <button class="bg-violet-600 px-8 py-2 rounded-xl">
+              Next <i class="ri-arrow-right-long-line"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class=" hidden md:flex justify-between items-center gap-10 mt-4 text-gray-300">
+        <div >
+          <p>QuizVerse</p>
+          <p>&copy; 2026. All rights reserved.</p>
+        </div>
+        <div>
+          <p>"Knowledge is the best investement."</p>
+        </div>
+        <div>
+          <p>Built with <i class="ri-heart-fill text-purple-800"></i> by Samm</p>
+        </div>
+      </div>
+    </footer>
+    <section class="text-white md:hidden">
+      <div class="bg-slate-800 m-4 p-2 rounded-2xl border border-violet-800">
+        <div class="flex items-center justify-between">
+          <h1 class="text-violet-600">Question 1 of 10</h1>
+          <p>Score: <span class="text-green-600">2</span></p>
+        </div>
+        <div class="flex items-center mt-2">
+          <div class="bg-slate-600 w-68 h-4 rounded-full">
+            <div class="bg-violet-600 h-full w-[30%] rounded-full"></div>
+          </div>
+          <p class="ml-4">30%</p>
+        </div>
+        <div class="bg-slate-800 m-2 p-2 rounded-2xl border border-violet-800">
+          <div class="flex items-center justify-center flex-col">
+            <h1 class="text-center sm:hidden">
+              Which of the following is used <br />
+              to style web pages.
+            </h1>
+            <h1 class="hidden sm:block text-center text-2xl">
+              Which of the following is used to style <br />
+              web pages.
+            </h1>
+            <div
+              id="options"
+              class="flex flex-col gap-y-2 items-center justify-center mt-4 "
+            >
+              <button
+                class="option flex items-center text-xl border py-1.5 w-56 sm:w-lg pl-4 rounded-xl"
+              >
+                <p class="mr-4 bg-violet-700 h-8 w-8 rounded-full">A</p>
+                CSS
+              </button>
+              <button
+                class="option flex items-center text-xl border py-1.5 w-56 sm:w-lg pl-4 rounded-xl"
+              >
+                <p class="mr-4 bg-violet-700 h-8 w-8 rounded-full">B</p>
+                HTML
+              </button>
+              <button
+                class="option flex items-center text-xl border py-1.5 w-56 sm:w-lg pl-4 rounded-xl"
+              >
+                <p class="mr-4 bg-violet-700 h-8 w-8 rounded-full">C</p>
+                JavaScript
+              </button>
+              <button
+                class="option flex items-center text-xl border py-1.5 w-56 sm:w-lg pl-4 rounded-xl"
+              >
+                <p class="mr-4 bg-violet-700 h-8 w-8 rounded-full">D</p>
+                Python
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center flex-col justify-center">
+          <button class="bg-violet-600 w-[90%] py-2 rounded-xl">
+            Next <i class="ri-arrow-right-long-line"></i>
+          </button>
+          <div
+            class="flex gap-6 justify-between items-center mt-4 bg-transparent"
+          >
+            <button class="bg-transparent border py-2 px-4 rounded-xl">
+              <i class="ri-reset-left-fill"></i> Previous
+            </button>
+            <button class="bg-transparent border py-2 px-4 rounded-xl">
+              <i class="ri-bookmark-line"></i> Save for later
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="md:hidden">
+      <div
+        class="flex flex-col text-gray-300 gap-2 justify-center items-center"
+      >
+        <div class="bg-slate-700 md:hidden h-1 w-60"></div>
+        <p class="md:hidden">"Small Questions. Big Progress. "</p>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
